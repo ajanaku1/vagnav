@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ajanaku1.github.io/vagnav",
   "name": "vagnav",
   "version": "1.0.0",
   "dependencies": {
@@ -13,7 +14,10 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "browserslist": {
     "production": [
